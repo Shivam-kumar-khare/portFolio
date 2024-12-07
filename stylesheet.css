@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+   
+    background-color: rgb(3, 7, 18);
+}
+body{
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Better alignment */
+    align-items: center;
+    height: 25vh;
+    padding: 0 2rem;
+    /* Added padding for spacing */
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    /* Use rem for better scalability */
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: rgb(100, 200, 255);
+    /* Add a hover effect for links */
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65%;
+    gap: 2rem;
+    /* Adjusted gap for better alignment */
+    padding: 2rem;
+   
+}
+
+.main {
+    width: 60%;
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.socialMediaIcons {
+    display: flex;
+    gap: 1rem;
+    /* Consistent spacing with rem */
+}
+
+.socialMediaIcons img {
+    width: 32px;
+    /* Set size for icons */
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Add a hover animation */
+}
+
+.socialMediaIcons img:hover {
+    transform: scale(1.2);
+    /* Slight zoom on hover */
+}
+nav h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+}
+
+nav h2:hover {
+    transform: scale(1.2); /* Zoom in on hover */
+    color: rgb(100, 200, 255); /* Color change on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .socialMediaIcons {
+        justify-content: center;
+    }
+}

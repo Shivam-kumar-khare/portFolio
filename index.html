@@ -1,47 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio by Shivam</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="home.css">
+    
+
 </head>
+
 <body>
     <!-- Navigation Section -->
     <nav>
-        <h2>Shivam Portfolio</h2>
+        <h2>Shivam's Portfolio</h2>
+        <!-- <span class="menu-icon" >☰</span> -->
         <ul class="nav">
+            <li><a href="#">Home</a></li>
             <li><a href="#about" aria-label="About Section">About</a></li>
             <li><a href="#projects" aria-label="Projects Section">Projects</a></li>
-            <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+            <li><a href="./contact.html" aria-label="Contact Section">Contact</a></li>
         </ul>
-        <span><img src="" alt=""></span>
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <div class="main">
-            <h1>Hi, I'm Shivam</h1>
-            <p>
-                I'm a passionate Full-Stack Web Developer specializing in creating dynamic, user-centric web applications.
-                My expertise includes HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, and Mongoose for scalable solutions.
-            </p>
-            <div class="socialMediaIcons">
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram Profile">
-                    <img src="./images/instagramicon.svg" alt="Instagram Icon">
+    <section id="about">
+        <div class="hero">
+            <div class="main">
+                <h1>Hi, I'm Shivam</h1>
+                <p>
+                    I'm a passionate Full-Stack Web Developer specializing in creating dynamic, user-centric web
+                    applications.
+                    My expertise includes HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, and Mongoose for scalable
+                    solutions.
+                </p>
+                <div class="socialMediaIcons">
+                    <a href="https://www.instagram.com/shivamkumarkhare" target="_blank" aria-label="Instagram Profile">
+                        <img src="./images/instagramicon.svg" alt="Instagram Icon">
+                    </a>
+                    <a href="https://x.com/shivamkhare6762" target="_blank" aria-label="Twitter Profile">
+                        <img src="./images/twitter.svg" alt="Twitter Icon">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile">
+                        <img src="./images/linkedin.svg" alt="LinkedIn Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./images/PI.jpg" alt="Shivam's Profile Picture">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skill section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <span>HTML</span>
+            <div class="loader">
+                <div class="progress html-progress"></div>
+
+            </div>
+            <span>Proficient</span>
+
+        </div>
+        <div class="skill">
+            <span>CSS</span>
+            <div class="loader">
+                <div class="progress css-progress"></div>
+            </div>
+            <span>Proficient</span>
+        </div>
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="loader">
+                <div class="progress js-progress"></div>
+            </div>
+            <span>Intermediate</span>
+        </div>
+        <div class="skill">
+            <span>Node.js with Express</span>
+            <div class="loader">
+                <div class="progress node-progress"></div>
+            </div>
+            <span>Intermediate</span>
+        </div>
+        <div class="skill">
+            <span>MongoDB</span>
+            <div class="loader">
+                <div class="progress mongodb-progress"></div>
+            </div>
+            <span>Intermediate</span>
+        </div>
+    </section>
+
+    <!-- Project section -->
+    <section id="projects"></section>
+        <span style="font-size: 2em;
+        margin-bottom: 20px;padding-bottom: 20px;">Projects</span>
+        <div id="Projects">
+            <!-- card 1 -->
+            <div class="card">
+                <video src="./videos/netflix.mp4" autoplay loop muted class="card-image"></video>
+            
+            <div class="card-content">
+                <span class="card-category">Netflix Clone</span>
+                <h2 class="card-title"><a href="#"> Know more</a></h2>
+            </div>
+            <p class="card-description">Explore a modern Netflix UI clone with intuitive navigation and responsive design.</p>
+            </div>
+            <!-- card 2 -->
+         <div class="card">
+            <video src="./videos/language translator.mp4" autoplay loop muted class="card-image"></video>
+           
+            <div class="card-content">
+                <span class="card-category">Language Translator </span>
+                <h2 class="card-title"><a href="#"> Know more <br> </a></h2>
+            </div>
+            <p class="card-description">Translate text between multiple languages with ease and accuracy.</p>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+                <video src="./videos/A  tic tac toe.mp4" autoplay loop muted class="card-image"></video>
+                <div class="card-content">
+                    <span class="card-category">Tic Tac Toe   </span>
+                    <h2 class="card-title"><a href="#"> Know more</a></h2>
+                </div>
+                <p class="card-description">Watch the game in action with autoplay and seamless looping."</p>
+            </div>
+    
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p style="font-size: 2em;"> <b>Contacts</b></p>
+            <div class="social-icons">
+                <a href="https://wa.me/91000000000" target="_blank" title="Whatsapp">
+                    <img src="./images/whatsapp.svg" alt="Whatsapp">
                 </a>
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter Profile">
-                    <img src="./images/twitter.svg" alt="Twitter Icon">
+
+
+                <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=shivamkhare6762@gmail.com" title="Gmail">
+                    <img src="./images/gmail_732200.png" alt="gmail">
                 </a>
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile">
-                    <img src="./images/linkedin.svg" alt="LinkedIn Icon">
+
+
+                <a href="tel:+915634567872" title="call">
+                    <img src="./images/call.svg" alt="Call">
                 </a>
             </div>
         </div>
-        <div class="image">
-            <!-- Placeholder for your image -->
-            <img src="./images/PI.jpg" alt="Shivam's Profile Picture">
-        </div>
-    </div>
+    </footer>
+   <script src="script.js"></script>
 </body>
+
 </html>

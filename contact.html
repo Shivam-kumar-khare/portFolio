@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts Page</title>
+    <link rel="stylesheet" href="contactcss.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <header>
+        <nav>
+            <h2>Shivam's Portfolio</h2>
+            <ul class="nav">
+                <li><a href="./index.html" aria-label="home Section">Home</a></li>
+                <li><a href="./index.html#about" aria-label="About Section">About</a></li>
+                <li><a href="./index.html#projects" aria-label="Projects Section">Projects</a></li>
+                <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <form  class="contact-form">
+            <h2>Contact Us</h2>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Your email" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Message..." required></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p style="font-size: 2em;"><b>Contacts</b></p>
+            <div class="social-icons">
+                <a href="#" title="Whatsapp">
+                    <img src="./images/whatsapp.svg" alt="Whatsapp">
+                </a>
+                <a href="#" title="Gmail">
+                    <img src="./images/gmail_732200.png" alt="Gmail">
+                </a>
+                <a href="#" title="Call">
+                    <img src="./images/call.svg" alt="Call">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

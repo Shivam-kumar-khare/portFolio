@@ -3,7 +3,6 @@ document.addEventListener('contextmenu', function (e) {
     alert("Right-click is disabled on this site.");
 });
 
-// Disable F12, Ctrl+Shift+I, and other developer tools shortcuts
 document.addEventListener('keydown', function (e) {
     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "C" || e.key === "J"))) {
         e.preventDefault();
@@ -13,7 +12,7 @@ document.addEventListener('keydown', function (e) {
 
 window.addEventListener('load', function () {
     if (window.innerWidth < 1000) {
-        alert("This site is best viewed on a desktop only.");
+        alert("This website is only visible at Desktop pls open in your desktop.");
         document.body.style.display = 'none';
     }
 });

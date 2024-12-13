@@ -11,10 +11,13 @@ document.addEventListener('keydown', function (e) {
 });
 
 window.addEventListener('load', function () {
-    if (window.innerWidth < 1000) {
-        alert("This website is only visible at Desktop pls open in your desktop.");
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    
+    if (width < 1.3 * height) {
+        alert("Please rotate your phone to view this website.");
         document.body.style.display = 'none'; 
-        document.body.innerHTML = '<h2 style="text-align: center; margin-top: 20%;">Please open this website on a desktop only.</h2>'; 
+        document.body.innerHTML = '<h2 style="text-align: center; margin-top: 20%;">Please rotate your phone to view this website.</h2>'; 
         document.body.style.display = 'block';
     }
 });

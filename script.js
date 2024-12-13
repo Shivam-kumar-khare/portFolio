@@ -10,7 +10,7 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-window.addEventListener('load', function () {
+function checkOrientation() {
     var width = window.innerWidth;
     var height = window.innerHeight;
     
@@ -19,5 +19,10 @@ window.addEventListener('load', function () {
         document.body.style.display = 'none'; 
         document.body.innerHTML = '<h2 style="text-align: center; margin-top: 20%;">Please rotate your phone to view this website.</h2>'; 
         document.body.style.display = 'block';
+    } else {
+        document.body.style.display = 'block'; // Ensure content is visible if orientation is correct
     }
-});
+}
+
+window.addEventListener('load', checkOrientation);
+window.addEventListener('resize', checkOrientation); // Detect orientation changes
